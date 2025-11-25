@@ -25,7 +25,45 @@
                 <h1>Formulário de matrícula</h1>
                 <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.
                 </p>
+                <form method="post" enctype="multipart/form-data">
+                    <fieldset class="child-info">
+                        <legend>Informações da criança</legend>
+                        <div class="input-wrapper">
+                            <label for="fullname">
+                                Nome Completo
+                            </label>
+                            <input type="text" id="fullname" placeholder="Qual Nome da criança" name="birth">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="">
+                                Data de Nascimento
+                            </label>
+                            <input type="date" id="birth" lang="pt-BR" name="birth">
+                        </div>
+                        <div class="select-wrapper">
+                            <label for="gender">Sexo
+                            </label>
+                            <select name="gender" id="gender">
+                                <option value="female">Feminino</option>
+                                <option value="male">Masculino</option>
+                                <option value="male">Prefiro não responder</option>
+                            </select>
+                        </div>
+                        <div class="textarea-wrapper">
+                            <label for="magical-info">Informações Médicas</label>
+                            <textarea name="medical-info" id="medical-info" cols="30" rows="10"
+                                placeholder="A criança possui alguma condição medica que a escola deve estar ciente? (Se sim,especifique)"></textarea>
+                        </div>
+                        <div class="droparea-wrapper">
+                            <input type="file" id="birth-file" name="birth-file">
+                            <img src="assets/icons/cloud-upload.svg" alt="Cloud-upload">
+                            <p>Clique aqui para <br>
+                            adicionar os arquivos</p>
+                        </div>
+                    </fieldset>
 
+
+                </form>
             </div>
         </main>
         <aside>
@@ -35,7 +73,7 @@
                     <h2>Porque cada momento de <span> aprendizado </span> conta</h2>
                     <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e
                         estimulante.</p>
-                       <img src="assets/Illustration.svg" alt="Ilustração de um professora com crianças"> 
+                    <img src="assets/Illustration.svg" alt="Ilustração de um professora com crianças">
 
                 </header>
             </div>
